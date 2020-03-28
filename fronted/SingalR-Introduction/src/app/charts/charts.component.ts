@@ -33,13 +33,16 @@ export class ChartsComponent implements OnInit {
   ngOnInit() {
     this.signalRService.startConnection();
     this.signalRService.addTransferChartDataListener();
+    this.signalRService.addBroadcastChartDataListener();
     this.startHttpRequest();
   }
 
   private startHttpRequest = () => {
-    this.httpClient.get('http://localhost:5001/api/chart')
-    .subscribe(res => {
-      console.log('res');
-    })
+    this.httpClient.get('https://localhost:5001/api/chart').subscribe(() => {});
   } 
+
+  public chartClicked = (event) => {
+    console.log(event);
+    this.signalRService.broadcastChartData();
+  }
 }

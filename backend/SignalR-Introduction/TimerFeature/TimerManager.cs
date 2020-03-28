@@ -15,7 +15,7 @@ namespace SignalR_Introduction.TimerFeature
         {
             this.action = action;
             this.autoResetEvent = new AutoResetEvent(false);
-            this.timer = new Timer(Execute, autoResetEvent, 1000, 2000);
+            this.timer = new Timer(Execute, autoResetEvent, 1000, 5000);
             TimerStarted = DateTime.Now;
         }
 

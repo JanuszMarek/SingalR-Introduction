@@ -5,5 +5,11 @@
             [options]="chartOptions"
             [legend]="chartLegend"
             [chartType]="chartType"
-            [colors]="colors"></canvas>
+            [colors]="colors"
+            (chartClick)="chartClicked($event)"></canvas>
   </div>
+  <ul>
+    <li *ngFor='let data of signalRService.broadcastedData'>
+      <strong>Label: </strong> {{data.label}} - <strong>Value: </strong> {{data.data[0]}}
+    </li>
+  </ul>
