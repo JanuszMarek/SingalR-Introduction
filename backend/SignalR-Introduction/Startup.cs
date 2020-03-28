@@ -10,6 +10,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using SignalR_Introduction.HubConfig;
 
 namespace SignalR_Introduction
 {
@@ -34,6 +35,7 @@ namespace SignalR_Introduction
                 .AllowCredentials());
             });
 
+            services.AddSignalR();
             services.AddControllers();
         }
 
@@ -56,6 +58,7 @@ namespace SignalR_Introduction
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
+                endpoints.MapHub<ChartHub>("/chart");
             });
         }
     }
