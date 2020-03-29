@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { SignalRService } from '../services/signal-r.service';
+import { ChartRService } from '../services/chart-r.service';
 import { HttpClient } from '@angular/common/http';
 
 @Component({
@@ -26,7 +26,7 @@ export class ChartsComponent implements OnInit {
   public colors: any[] = [{ backgroundColor: '#5491DA' }, { backgroundColor: '#E74C3C' }, { backgroundColor: '#82E0AA' }, { backgroundColor: '#E5E7E9' }];
 
   constructor(
-    public signalRService: SignalRService,
+    public signalRService: ChartRService,
     private httpClient: HttpClient
   ){}
 

@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { SignalRService } from './services/signal-r.service';
-import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-root',

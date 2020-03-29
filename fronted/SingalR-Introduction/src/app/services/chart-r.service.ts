@@ -6,7 +6,7 @@ import * as signalR from "@aspnet/signalr";
 @Injectable({
   providedIn: 'root'
 })
-export class SignalRService {
+export class ChartRService {
   public data: ChartModel[];
   private hubConnection : signalR.HubConnection;
   public broadcastedData: ChartModel[];
