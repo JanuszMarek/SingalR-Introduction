@@ -7,11 +7,13 @@ import { AppComponent } from './app.component';
 import { ChartsModule } from 'ng2-charts';
 import { HttpClientModule } from '@angular/common/http';
 import { ChartsComponent } from './charts/charts.component';
+import { MessageChatComponent } from './message-chat/message-chat.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ChartsComponent
+    ChartsComponent,
+    MessageChatComponent
   ],
   imports: [
     BrowserModule,

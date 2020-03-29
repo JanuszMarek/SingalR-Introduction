@@ -11,7 +11,7 @@ export class ChartRService {
   private hubConnection : signalR.HubConnection;
   public broadcastedData: ChartModel[];
 
-  public startConnection = () => {
+  public startConnection() {
     this.hubConnection = new signalR.HubConnectionBuilder()
                             .withUrl('https://localhost:5001/chart')
                             .build();
