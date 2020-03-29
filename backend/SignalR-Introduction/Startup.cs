@@ -59,6 +59,7 @@ namespace SignalR_Introduction
             {
                 endpoints.MapControllers();
                 endpoints.MapHub<ChartHub>("/chart");
+                endpoints.MapHub<MessageHub>("/message");
             });
         }
     }
