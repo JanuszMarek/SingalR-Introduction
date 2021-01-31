@@ -13,6 +13,7 @@ namespace SignalR_Introduction.HubConfig
             //comment two
             //comment three
             //comment 4
+            //Uczę się nowych rzeczy z mężusiem :D 
         }
     }
 }
