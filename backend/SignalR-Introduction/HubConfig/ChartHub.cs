@@ -10,5 +10,6 @@ namespace SignalR_Introduction.HubConfig
     public class ChartHub: Hub
     {
         public async Task BroadcastChartData(List<ChartModel> data) => await Clients.All.SendAsync("broadcastchartdata", data);
+        // commit one two three
     }
 }

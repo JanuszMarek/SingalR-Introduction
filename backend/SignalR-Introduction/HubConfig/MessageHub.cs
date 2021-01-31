@@ -12,6 +12,7 @@ namespace SignalR_Introduction.HubConfig
             //comment
             //comment two
             //comment three
+            //comment 4
         }
     }
 }
