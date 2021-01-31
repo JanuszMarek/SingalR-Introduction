@@ -9,6 +9,7 @@ namespace SignalR_Introduction.HubConfig
         public async Task NewMessage(Message msg)
         {
             await Clients.All.SendAsync("messageReceived", msg);
+            //comment
         }
     }
 }
