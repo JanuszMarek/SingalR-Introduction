@@ -10,6 +10,7 @@ namespace SignalR_Introduction.HubConfig
         {
             await Clients.All.SendAsync("messageReceived", msg);
             //comment
+            //comment two
         }
     }
 }
