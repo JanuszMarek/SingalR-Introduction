@@ -8,6 +8,7 @@ namespace SignalR_Introduction.HubConfig
     {
         public async Task NewMessage(Message msg)
         {
+            //test merga
             await Clients.All.SendAsync("messageReceived", msg);
             //comment
             //comment two
